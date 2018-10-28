@@ -1,0 +1,92 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+
+}
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+fieldset {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 30px;
+}
+.ghost-input, p {
+  display: block;
+  font-weight:300;
+  width: 100%;
+  font-size: 25px;
+  border:0px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #4b545f;
+  background: #fff;
+  font-family: Open Sans,Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+  color: rgb(186, 1, 1);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family:Comic Sans MS;
+    border-radius: 50px;
+}
+.ghost-input:focus {
+  border-bottom:1px solid #ddd;
+}
+.ghost-button {
+  background-color: transparent;
+  border-style: none;
+  padding:5px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  min-width: 350px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+color: rgb(186, 1, 1);
+border-radius: 50px;
+}
+.ghost-button:hover {
+  border:2px solid rgb(186, 1, 1,0.3);
+}
+p {
+  background-color: rgb(0, 0, 0,0);
+    color: rgb(186, 42, 2);
+}

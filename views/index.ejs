@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="city" type="text" class="ghost-input" id="autocomplete" placeholder="Enter a City" required>
+
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+    </div>
+    <video autoplay loop id="video-background" muted plays-inline>
+      <source src="/css/Lightning.mp4" type="video/mp4">
+    </video>
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=gb"></script>
+    <script src='/js/main.js'></script>
+  </body>
+</html>
